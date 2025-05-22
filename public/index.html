@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find-Your-Weather 🌦️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>🌤️ F-Y-W</h1>
+    <input type="text" id="cityInput" placeholder="Enter city..." />
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weatherResult"></div>
+  </div>
+
+  <!-- Weather-Based Sounds -->
+<audio id="rainSound" loop preload="auto">
+  <source src="https://actions.google.com/sounds/v1/weather/rain_and_thunder.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="sunnySound" loop preload="auto">
+  <source src="https://actions.google.com/sounds/v1/ambiences/summer_day.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="coldSound" loop preload="auto">
+  <source src="https://actions.google.com/sounds/v1/ambiences/wind_blowing.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
